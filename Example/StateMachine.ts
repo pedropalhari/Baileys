@@ -260,7 +260,7 @@ export function doStateMachine(whatsappUserId: string, message: string) {
       if (message == "1") {
         userStateMap[whatsappUserId] = "SHOW_MENU";
         return (
-          `*Pedido realizado com sucesso!*\n\n` +
+          `*Pedido realizado com sucesso! Obrigado por comprar na teepad.*\n\n` +
           `Dados finais do pedido:\n` +
           userObjectMap[whatsappUserId].productList
             .map((x) => x.productName)
